@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Testing unslider</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="unslider-master/dist/css/unslider.css">
+        <link rel="stylesheet" href="unslider-master/dist/css/unslider-dots.css">
+    </head>
+
+    <div id = "container">
+        <div class="slider">
+            <ul>
+                <li><img src = "assets/img/noborderme.png"> </li>
+                <li>Another slide</li>
+                <li>My last slide</li>
+                <li>Hello </li>
+            </ul>
+          
+        </div>
+    </div>
+    <body>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="unslider-master/src/js/unslider.js"></script>
+    <script>
+        
+        jQuery(document).ready(function($) {
+
+            $('.slider').unslider({
+
+                speed: 1000,
+                delay: 1000,
+                fluid: true,
+                dots: false,
+                arrows: true,
+                pause: true,
+
+                arrows: {
+                prev: '<a class="unslider-arrow prev"> < </a>',
+                next: '<a class="unslider-arrow next"> > </a>',
+
+            }
+
+            });
+
+
+        });
+
+       
+    </script>
+    </body>
+</html>
