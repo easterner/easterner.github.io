@@ -156,7 +156,7 @@ a {
 	z-index:-1000000000;
 	top:-1px;
 	width:100%;
-	height:100%;
+	height:700px;
 	overflow:hidden;
 	background-color:#FCF48F;
 	/*background-image:url('img/grinders.png');*/
@@ -182,6 +182,9 @@ a {
 	/*transform:translateX(-50%);*/
 }
 
+.beef-description{
+	display:none;
+}
 #cont-container1{
 
 	position:relative;
@@ -190,14 +193,17 @@ a {
 	transform:translateX(-50%);
 	width:1000px;
 	height:90%;
-	border:solid 30px white;
-	/*opacity:.7;*/
-	
+	border:solid 30px white;	
 	background-color:white;
 
 }
 
-
+#icon-container{
+	/*background-color:pink;*/
+	position:relative;
+	left:10%;
+	top:-140px;
+}
 
 .cuts{
 	transform: scale(.6);
@@ -206,6 +212,17 @@ a {
 
 .cuts:hover{
 	cursor:pointer;
+	transition:.4;
+	transform:scale(.7);
+}
+
+.larger{
+	transform:scale(.7);
+}
+
+.smaller{
+	transform:scale(.5);
+	filter:blur(5px);
 }
 
 #ribeye-icon{
@@ -231,29 +248,29 @@ a {
 	top:210px;
 	left:180px;
 }
-#cow-blank{
+
+.redcow{
 	position:absolute;
+	transform:scale(.7);
+}
+
+#cow-blank{
 	top:10px;
 	right:-40px;
-	transform: scale(.7);
+	
 }
 
 #cowloin{
-	position:absolute;
 	top:10px;
 	right:-40px;
-	transform: scale(.7);
 	display:none;
 
 }
 
 #cowrib{
-	position:absolute;
 	top:10px;
 	right:-40px;
-	transform: scale(.7);
 	display:none;
-
 }
 	
 
@@ -266,25 +283,36 @@ a {
 	background: #FFFFFF;
 	box-shadow: 12px 9px 0 0 #EC5954, -3px -5px 0 0 #FCF48F;
 	z-index:40000000000000000;
+	display:none;
 }
 
 .beef-description{
+	position:absolute;
 	font-size:12px;
 	padding:10px;
 	line-height:30px;
 
 }
 
+#two-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background-color:pink;*/
+	/*z-index:3000;*/
+}
+
+.activate-overlay{
+	z-index:3000;
+}
+
 #filet-description{
-	display:none;
 }
 
 #ny-description{
-	display:none;
 }
 
 #ribeye-description{
-	display:none;
 }
 
 #icon-container{
@@ -312,7 +340,7 @@ a {
 	position:relative;
 	top:-1px;
 	width:100%;
-	height:120%;
+	height:900px;
 	padding:bottom:200px;
 	background-color:white;
 	background-image:url('img/pans2.png');
