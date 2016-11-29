@@ -71,6 +71,8 @@ $('#two-overlay').click(function(){
 	}
 
 	$('#two-overlay').removeClass('activate-overlay');
+	$('.redcow').hide();
+	$('#cow-blank').show();
 
 })
 
