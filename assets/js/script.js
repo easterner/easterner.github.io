@@ -72,17 +72,57 @@ $('#two-overlay').click(function(){
 
 	$('.redcow').hide();
 	$('#cow-blank').show();
-	
+
 	$('#two-overlay').removeClass('activate-overlay');
 
 
 })
 
 
-// $('#cont-container1').click(function(){
-// 	$('.beef-description').hide();
-// 	$('cuts').removeClass('smaller');
-// 	$('cuts').removeClass('larger');
-// })
+$('#recipe2').hover(
+	function(){
+
+	$('#recipe2-overlay').fadeIn(400);
+	},
+
+	function(){
+	$('#recipe2-overlay').fadeOut(400);
+	}
+)
+
+$('#recipe2').click(
+	function(){
+		$('#recipe1-overlay').hide();
+		$('#recipe1-overlay-dup').hide();
+		$('#recipe1-writeup').hide();
+		$('#spotlight-image1').fadeOut(100);
+		$('#recipe2-overlay-dup').show();
+		$('#recipe2-writeup').show();
+		$('#spotlight-image2').fadeIn(200);
+	}
+)
+
+$('#recipe1').hover(
+	function(){
+
+	$('#recipe1-overlay').fadeIn(200);
+	},
+
+	function(){
+	$('#recipe1-overlay').fadeOut(200);
+	}
+)
+
+$('#recipe1').click(
+	function(){
+		$('#recipe2-overlay-dup').hide();
+		$('#recipe2-writeup').hide();
+		$('#spotlight-image2').fadeOut(100);
+		$('#recipe1-overlay-dup').show();
+		$('#recipe1-writeup').show();
+		$('#spotlight-image1').fadeIn(200);
+
+	}
+)
 
 })
