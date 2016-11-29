@@ -70,9 +70,11 @@ $('#two-overlay').click(function(){
 		$('.cuts').removeClass('larger');
 	}
 
-	$('#two-overlay').removeClass('activate-overlay');
 	$('.redcow').hide();
 	$('#cow-blank').show();
+	
+	$('#two-overlay').removeClass('activate-overlay');
+
 
 })
 
