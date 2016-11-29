@@ -1,65 +1,59 @@
-/*************************/
-/* Styles for all pages */
-
 body {
 	font-family: Avenir;
+	padding: 0px;
+	margin:0px;
+	height:100%;
+	font-size:11px;
+	/*min-width:960px;*/
+}
+
+a {
+	text-decoration: none;
+	color:#FCF48F;
+}
+
+#one{
 	width:100%;
 	height:100%;
-	min-width:960px;
-}
-
-#landing-container{
 	overflow:hidden;
-	width:100%;
+	/*background-color:pink;*/
+	/*padding-bottom:px;*/
 }
 
 
+#landing-pic{
+	z-index:-300000000;
+	/*-webkit-filter: blur(7px);*/
 
-
-.menu-container{
-	background-size:cover;
-	height: 270px;
-	overflow: hidden;
-	padding:0px;
 }
 
-.menu-container img{
-	padding:0px;
-	margin-right:50px;
-	-webkit-filter: blur(7px);
-}
-
-#menu-bar{
+#circle{
 	position:absolute;
-	top:12px;
-	margin-left:140px;
-}
-
-#menu-bar div{
-	float:left;
-	margin-right:20px;
-	color: #F5EC9F;
-	font-weight:400;
-	font-size:16px;
-	letter-spacing:3px;
-	letter-spacing: 4.57px;
+	left:50%;
+	/*transform: scale(.40);*/
+	transform:translateX(-50%);
+	z-index:100000;
+	bottom:-1%;
 }
 
 .logo{
 	font-family: Avenir-Black;
 /*	text-align:center;
-*/	font-size: 70px;
+*/	font-size: 80px;
 	color: #EC5954;
-	letter-spacing: 25px;
+	letter-spacing: 20px;
 	line-height: 60px;
 	text-shadow: 3px 4px 0 #FCF48F;
 } 
 
 #asym-background{
+	/*text-align:center;*/
 	position:absolute;
 	bottom:0%;
-	/*width:100px;*/
-	z-index:-1;
+	overflow:hidden;
+	width:100%;
+	/*background-colorpink;*/
+
 }
 
 
@@ -72,14 +66,13 @@ body {
 	height:360px;
 	display:inline-block;
 	overflow:hidden;
-	border:solid white 10px;
-	box-shadow: 8px 6px #EC5954;
+	border:solid white 20px;
 }
 
 
 #meat-logo{
 	position:absolute;
-	bottom:80%;
+	top:8%;
 	left:7%;
 
 }
@@ -87,19 +80,22 @@ body {
 #meat-box{
 	position:absolute;
 	margin-left:15%;
-	bottom:14%;
+	top:28%;
 	background-color:red;
+
 
 }
 
 .box-pic img{
-	border: solid #FCF48F 3px;
+	/*border: solid #FCF48F 3px;*/
+	box-shadow: 8px 6px #EC5954;
+	z-index:25;
 	box-shadow: 8px 6px #EC5954;
 }
 
 #recipe-box{
 	position:absolute;
-	bottom: 8%;
+	top:28%;
 	margin-left:55%;
 	/*marg in-left:300px;*/
 }
@@ -138,7 +134,6 @@ body {
 	font-size:12px;
 	text-align:center;
 	padding:10px;
-	color:#FCF48F;
 	background-color:#57CDED;
 	width:80px;
 	border-radius:5px;
@@ -147,68 +142,331 @@ body {
 	bottom:50px;
 }
 
-/*#welcome{
-
-	position:absolute;
-	bottom:3px;
-	font-size:28px;
-	color: #57CDED;
-	font-weight: 700;
-}*/
-
-/*******************/
-/* Recipes Styles */
-
-#recipes-logo{
-	position:absolute;
-	top:120px;
-	margin-left:140px;
+.box-button:hover{
+	cursor:pointer;
 }
 
-#filet{
-	position:absolute;
-	top:200px;
-	left:40.5%;
-	/*z-index:-1;*/
-	transform: scale(.85);
+/*****************************************/
+/******* MEAT INDEX STYLES ***************/
+/*****************************************/
+
+
+#two{
+	position:relative;
+	z-index:-1000000000;
+	top:-1px;
+	width:100%;
+	height:700px;
+	overflow:hidden;
+	background-color:#FCF48F;
+	/*background-image:url('img/grinders.png');*/
 }
 
-.recipe-heading{
+#asym-title-container1{
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	
+}
+
+.page-heading{
+
+	font-size:80px;
+	position:relative;
+	top:-100px;
 	text-align:center;
-	font-size:28px;
 	font-weight:bold;
-	letter-spacing:3px;
-	color: #57CDED;
-	margin-top:150px;
+	color:#57CDED;
+	text-shadow: 3px 4px 0 #EC5954;
+	letter-spacing:20px;
+	/*transform:translateX(-50%);*/
 }
 
-#ingredients-container{
-	margin-left:200px;
+.beef-description{
+	display:none;
+}
+#cont-container1{
+
+	position:relative;
+	top:100px;
+	left:50%;
+	transform:translateX(-50%);
+	width:1000px;
+	height:90%;
+	border:solid 30px white;	
+	background-color:white;
+
 }
 
-#ingredients-header{
-	font-family: Avenir-Heavy;
-	font-size: 18px;
-	color: #EC5954;
-	letter-spacing: 3.42px;
-	margin-top:20px;
-	margin-bottom:20px;
+#icon-container{
+	/*background-color:pink;*/
+	position:relative;
+	left:10%;
+	top:-140px;
 }
 
-#ingredients{
-	font-family: Avenir-HeavyOblique;
-	font-size: 14px;
-	color: #4A4A4A;
-	letter-spacing: 2.66px;
-	line-height: 31px;
+.cuts{
+	transform: scale(.6);
+
 }
 
-#divider{
-	display:inline-block;
-	margin-left: 400px;
+.cuts:hover{
+	cursor:pointer;
+	transition:.4;
+	transform:scale(.7);
+}
+
+.larger{
+	transform:scale(.7);
+}
+
+.smaller{
+	transform:scale(.5);
+	filter:blur(5px);
+}
+
+#ribeye-icon{
 	position:absolute;
-	top:500px;
+	top:40px;
+	left:160px;
 }
+
+#filet-icon{
+	position:absolute;
+	left:-30px;
+	top:210px;
+}
+
+#ny-icon{
+	position:absolute;
+	top:30px;
+	left:-10px;
+}
+
+#coming-icon{
+	position:absolute;
+	top:210px;
+	left:180px;
+}
+
+.redcow{
+	position:absolute;
+	transform:scale(.7);
+}
+
+#cow-blank{
+	top:10px;
+	right:-40px;
+	
+}
+
+#cowloin{
+	top:10px;
+	right:-40px;
+	display:none;
+
+}
+
+#cowrib{
+	top:10px;
+	right:-40px;
+	display:none;
+}
+	
+
+#description-container{
+	position:absolute;
+	right:0px;
+	top:350px;
+	width:400px;
+	height:150px;
+	background: #FFFFFF;
+	box-shadow: 12px 9px 0 0 #EC5954, -3px -5px 0 0 #FCF48F;
+	z-index:40000000000000000;
+	display:none;
+}
+
+.beef-description{
+	position:absolute;
+	font-size:12px;
+	padding:10px;
+	line-height:30px;
+
+}
+
+#two-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background-color:pink;*/
+	/*z-index:3000;*/
+}
+
+.activate-overlay{
+	z-index:3000;
+}
+
+#filet-description{
+}
+
+#ny-description{
+}
+
+#ribeye-description{
+}
+
+#icon-container{
+	/*background-color:pink;*/
+	height:100%;
+	width:400px;
+
+}
+
+#asym-break{
+	position:absolute;
+
+	bottom:-55px;
+	/*display:none;*/
+
+}
+
+
+
+/******************************/
+/********RECIPE STYLES*********/
+/******************************/
+
+#three{
+	position:relative;
+	top:-1px;
+	width:100%;
+	height:900px;
+	padding:bottom:200px;
+	background-color:white;
+	background-image:url('img/pans2.png');
+	opacity:1;
+	overflow:hidden;
+}
+
+#asym-title-container2{
+	position:absolute;
+	top:10px;
+	left:50%;
+	transform: translateX(-50%);
+	/*display:none;*/
+}
+
+#recipe-page-title{
+	position:absolute;
+	letter-spacing:24px;
+	top:150px;
+	font-size:80px;
+	position:relative;
+	text-align:center;
+	font-weight:bold;
+	color:#57CDED;
+	width:500px;
+	left:50%;
+	padding-top:30px;
+	padding-bottom:10px;
+	transform: translateX(-50%);
+	/*background-color:#FCF48F;*/
+	text-shadow: 3px 4px 0 white;
+	z-index:4;
+	text-shadow: 3px 4px 0 #EC5954;
+
+}
+
+#cont-container2{
+	width:100%;
+	height:500px;
+	background-color:white;
+	border:solid 30px white;
+	position:relative;
+	top:150px;
+	left:50%;
+	transform:translateX(-50%);
+
+
+}
+
+.recipe-holder{
+	margin-top:0px;
+	width:200px;
+	display:inline-block;
+	margin-left:50px;
+	height:400px;
+	background-color:white;
+	overflow:hidden;
+	border:10px solid white;
+	/*box-shadow: 12px 9px 0 0 #EC5954, -3px -5px 0 0 #FCF48F;*/
+
+}
+
+.recipe-holder:hover{
+	cursor:pointer;
+}
+
+#recipe-image1{
+	position:relative;
+	left:-200px;
+}
+
+#recipe-image2 img{
+	width:600px;
+	position:relative;
+	left:-200px;
+}
+
+#recipe-spotlight{
+	position:absolute;
+	left:600px;
+	top:0px;
+	height:500px;
+	/*background-color: pink;*/
+	width:600px;
+	overflow: scroll;
+	/*box-shadow: 12px 9px 0 0 #EC5954, -3px -5px 0 0 #FCF48F;*/
+}
+
+.spotlight-image-container{
+	height:300px;
+	width:490px;
+	background-color:white;
+	overflow:hidden;
+	margin:0px auto;
+	margin-top: 20px;
+	box-shadow: 12px 9px 0 0 #EC5954, -3px -5px 0 0 #FCF48F;
+
+}
+
+#spotlight-image1 img{
+	width:490px;
+	/*display:none;*/
+}
+
+#spotlight-image2 img{
+	width:490px;
+	display:none;
+}
+
+.recipe-instructions-container{
+	margin-top: 20px;
+	margin-left:70px;
+}
+
+#ingredients1{
+	display:none;
+}
+
+#instructions1{
+	display:none;
+}
+
+
+
+
+
 
 
 
